@@ -1,0 +1,3 @@
+﻿  main.cpp
+f:\facultate\an2\poo\lab9\lab9\main.cpp(84): warning C4715: 'Map<int,int>::operator[]': not all control paths return a value
+  lab9.vcxproj -> F:\FACULTATE\An2\POO\lab9\Debug\lab9.exe

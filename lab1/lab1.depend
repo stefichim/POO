@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1582187569 source:f:\facultate\an2\poo\lab1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

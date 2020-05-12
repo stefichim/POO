@@ -1,0 +1,4 @@
+﻿  main.cpp
+f:\facultate\an2\poo\lab7\lab7\main.cpp(101): error C2760: syntax error: unexpected token 'const', expected 'expression'
+  f:\facultate\an2\poo\lab7\lab7\main.cpp(118): note: see reference to class template instantiation 'Vector<T>' being compiled
+f:\facultate\an2\poo\lab7\lab7\main.cpp(106): error C2760: syntax error: unexpected token ')', expected 'expression'

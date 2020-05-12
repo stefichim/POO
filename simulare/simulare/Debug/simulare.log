@@ -1,0 +1,4 @@
+﻿  Propozitie.cpp
+f:\facultate\an2\poo\simulare\simulare\propozitie.cpp(46): warning C4018: '>=': signed/unsigned mismatch
+f:\facultate\an2\poo\simulare\simulare\propozitie.cpp(88): warning C4715: 'Propozitie::Contains': not all control paths return a value
+  simulare.vcxproj -> F:\FACULTATE\An2\POO\simulare\Debug\simulare.exe

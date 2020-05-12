@@ -1,0 +1,4 @@
+﻿  main.cpp
+f:\facultate\an2\poo\lab10\lab10\main.cpp(15): warning C4018: '<': signed/unsigned mismatch
+f:\facultate\an2\poo\lab10\lab10\main.cpp(25): warning C4018: '<': signed/unsigned mismatch
+  lab10.vcxproj -> F:\FACULTATE\An2\POO\lab10\Debug\lab10.exe

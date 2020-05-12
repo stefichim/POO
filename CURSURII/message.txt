@@ -1,0 +1,147 @@
+
+/*
+float operator"" _Kelvin(unsigned long long int x) {
+    return x - 273.15;
+}
+
+int main() {
+    float a = 300_Kelvin;
+    float b = 125_Kelvin;
+    printf("%f %f\n", a, b);
+    //float b = 120_Fahrenheit;
+    return 0;
+}
+*/
+
+/*
+class VectorInt {
+    int List[100];
+    int counter;
+public:
+    VectorInt()
+    {
+        counter = 0;
+    }
+    void Push(int x) { this->List[this->counter++] = x; }
+    int Pop() { return this->List[--this->counter]; }
+};
+
+class VectorFloat {
+    float List[100];
+    int counter;
+public:
+    VectorFloat()
+    {
+        counter = 0;
+    }
+    void Push(float x) { this->List[this->counter++] = x; }
+    float Pop() { return this->List[--this->counter]; }
+};
+
+class VectorDouble {
+    double List[100];
+    int counter;
+public:
+    VectorDouble()
+    {
+        counter = 0;
+    }
+    void Push(double x) { this->List[this->counter++] = x; }
+    double Pop() { return this->List[--this->counter]; }
+};
+
+int main()
+{
+    VectorInt v;
+    v.Push(1);
+    v.Push(2.5);
+    v.Push(3.5);
+    std::cout << "vint last elem: " <<  v.Pop() << "\n";
+    VectorFloat f;
+    f.Push(1.0);
+    f.Push(3.5);
+    f.Push(5.6);
+    std::cout << "vfloat last elem: " << f.Pop() << "\n";
+    VectorDouble d;
+    d.Push(1.0);
+    d.Push(3.0);
+    d.Push(5.0);
+    std::cout << "vdouble last elem: " << d.Pop() << "\n";
+}
+*/
+/*
+template <class T>
+class Vector {
+    T* List;
+    int count;
+    int vectorSize;
+public:
+    Vector()
+    {
+        this->vectorSize = 100;
+        this->List = (T*)(malloc(this->vectorSize * sizeof(T)));
+        this->count = 0;
+    }
+    void Push(T x)
+    {
+        if (this->count >= this->vectorSize)
+        {
+            this->vectorSize = this->vectorSize * 2;
+            this->List = (T*)(realloc(this->List, this->vectorSize));
+        }
+        this->List[count++] = x;
+    }
+    T Pop()
+    {
+        return this->List[--count];
+    }
+};
+
+int main()
+{
+    Vector<int> v;
+    v.Push(1); v.Push(2); v.Push(3);
+    Vector<float> f;
+    f.Push(1.3); f.Push(2.7); f.Push(3.5);
+    printf("%d %f\n", v.Pop(), f.Pop());
+}
+*/
+/*
+std::string buildCompleteMessage(std::string rawData, std::string(*encrypterFunPtr)(std::string, int))
+{
+    // Add some header and footer to data to make it complete message
+    rawData = "[HEADER]" + rawData + "[FooTER]";
+    int key = 20;
+    // Call the callBack provided i.e. function pointer to encrypt the
+    rawData = encrypterFunPtr(rawData, 20);
+    return rawData;
+}
+
+//This encrypt function increment all letters in string by 1.
+std::string encryptDataByLetterInc(std::string data, int key)
+{
+    for (int i = 0; i < data.size(); i++)
+    {
+        if ((data[i] >= 'a' && data[i] <= 'z') || (data[i] >= 'A' && data[i] <= 'Z'))
+            data[i] += key;
+    }
+    return data;
+}
+
+std::string encryptDataByLetterDec(std::string data, int key)
+{
+    for (int i = 0; i < data.size(); i++)
+    {
+        if ((data[i] >= 'a' && data[i] <= 'z') || (data[i] >= 'A' && data[i] <= 'Z'))
+            data[i] -= key;
+    }
+    return data;
+}
+
+int main()
+{
+    std::string msg = buildCompleteMessage("SampleString", &encryptDataByLetterInc);
+    std::cout << msg << std::endl;
+    std::string msg2 = buildCompleteMessage("SampleString", &encryptDataByLetterDec);
+    std::cout << msg2 << std::endl;
+}*/

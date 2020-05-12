@@ -1,0 +1,2 @@
+﻿Number.obj : error LNK2019: unresolved external symbol "public: __thiscall Number::Number(class Number const &&)" (??0Number@@QAE@$$QBV0@@Z) referenced in function "class Number __cdecl operator-(class Number,class Number)" (??G@YA?AVNumber@@V0@0@Z)
+F:\FACULTATE\An2\POO\lab5\Debug\lab5.exe : fatal error LNK1120: 1 unresolved externals
